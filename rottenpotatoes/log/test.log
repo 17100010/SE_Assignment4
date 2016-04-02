@@ -1,0 +1,411 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00], ["description", nil], ["director", "abc"], ["rating", "G"], ["release_date", Wed, 25 Nov 1992 00:00:00 UTC +00:00], ["title", "Aladdin"], ["updated_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Fri, 26 Oct 1984 00:00:00 UTC +00:00], ["title", "The Terminator"], ["updated_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00], ["description", nil], ["director", "ghi"], ["rating", "R"], ["release_date", Fri, 21 Jul 1989 00:00:00 UTC +00:00], ["title", "When Harry Met Sally"], ["updated_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00], ["description", nil], ["director", "jkl"], ["rating", "PG-13"], ["release_date", Wed, 10 Aug 2011 00:00:00 UTC +00:00], ["title", "The Help"], ["updated_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG-13"], ["release_date", Fri, 05 Jan 2001 00:00:00 UTC +00:00], ["title", "Chocolat"], ["updated_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Wed, 25 Apr 2001 00:00:00 UTC +00:00], ["title", "Amelie"], ["updated_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Sat, 06 Apr 1968 00:00:00 UTC +00:00], ["title", "2001: A Space Odyssey"], ["updated_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 05 Nov 2004 00:00:00 UTC +00:00], ["title", "The Incredibles"], ["updated_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 12 Jun 1981 00:00:00 UTC +00:00], ["title", "Raiders of the Lost Ark"], ["updated_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Wed, 21 Jun 2000 00:00:00 UTC +00:00], ["title", "Chicken Run"], ["updated_at", Sat, 02 Apr 2016 04:42:00 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00], ["description", nil], ["director", "abc"], ["rating", "G"], ["release_date", Wed, 25 Nov 1992 00:00:00 UTC +00:00], ["title", "Aladdin"], ["updated_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Fri, 26 Oct 1984 00:00:00 UTC +00:00], ["title", "The Terminator"], ["updated_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00], ["description", nil], ["director", "ghi"], ["rating", "R"], ["release_date", Fri, 21 Jul 1989 00:00:00 UTC +00:00], ["title", "When Harry Met Sally"], ["updated_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00], ["description", nil], ["director", "jkl"], ["rating", "PG-13"], ["release_date", Wed, 10 Aug 2011 00:00:00 UTC +00:00], ["title", "The Help"], ["updated_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG-13"], ["release_date", Fri, 05 Jan 2001 00:00:00 UTC +00:00], ["title", "Chocolat"], ["updated_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Wed, 25 Apr 2001 00:00:00 UTC +00:00], ["title", "Amelie"], ["updated_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Sat, 06 Apr 1968 00:00:00 UTC +00:00], ["title", "2001: A Space Odyssey"], ["updated_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 05 Nov 2004 00:00:00 UTC +00:00], ["title", "The Incredibles"], ["updated_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 12 Jun 1981 00:00:00 UTC +00:00], ["title", "Raiders of the Lost Ark"], ["updated_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Wed, 21 Jun 2000 00:00:00 UTC +00:00], ["title", "Chicken Run"], ["updated_at", Sat, 02 Apr 2016 05:03:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies" for 127.0.0.1 at 2016-04-02 05:03:39 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (18.5ms)
+Completed 200 OK in 54.7ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00], ["description", nil], ["director", "abc"], ["rating", "G"], ["release_date", Wed, 25 Nov 1992 00:00:00 UTC +00:00], ["title", "Aladdin"], ["updated_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Fri, 26 Oct 1984 00:00:00 UTC +00:00], ["title", "The Terminator"], ["updated_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00], ["description", nil], ["director", "ghi"], ["rating", "R"], ["release_date", Fri, 21 Jul 1989 00:00:00 UTC +00:00], ["title", "When Harry Met Sally"], ["updated_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00], ["description", nil], ["director", "jkl"], ["rating", "PG-13"], ["release_date", Wed, 10 Aug 2011 00:00:00 UTC +00:00], ["title", "The Help"], ["updated_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG-13"], ["release_date", Fri, 05 Jan 2001 00:00:00 UTC +00:00], ["title", "Chocolat"], ["updated_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Wed, 25 Apr 2001 00:00:00 UTC +00:00], ["title", "Amelie"], ["updated_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Sat, 06 Apr 1968 00:00:00 UTC +00:00], ["title", "2001: A Space Odyssey"], ["updated_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 05 Nov 2004 00:00:00 UTC +00:00], ["title", "The Incredibles"], ["updated_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 12 Jun 1981 00:00:00 UTC +00:00], ["title", "Raiders of the Lost Ark"], ["updated_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Wed, 21 Jun 2000 00:00:00 UTC +00:00], ["title", "Chicken Run"], ["updated_at", Sat, 02 Apr 2016 05:04:50 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies" for 127.0.0.1 at 2016-04-02 05:04:50 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 59.6ms (Views: 51.6ms | ActiveRecord: 0.3ms)
+Started GET "/movies/2" for 127.0.0.1 at 2016-04-02 05:04:50 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered movies/show.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 11.2ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+Started GET "/movies/2/edit" for 127.0.0.1 at 2016-04-02 05:04:50 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered movies/edit.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 17.8ms (Views: 16.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00], ["description", nil], ["director", "abc"], ["rating", "G"], ["release_date", Wed, 25 Nov 1992 00:00:00 UTC +00:00], ["title", "Aladdin"], ["updated_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Fri, 26 Oct 1984 00:00:00 UTC +00:00], ["title", "The Terminator"], ["updated_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00], ["description", nil], ["director", "ghi"], ["rating", "R"], ["release_date", Fri, 21 Jul 1989 00:00:00 UTC +00:00], ["title", "When Harry Met Sally"], ["updated_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00], ["description", nil], ["director", "jkl"], ["rating", "PG-13"], ["release_date", Wed, 10 Aug 2011 00:00:00 UTC +00:00], ["title", "The Help"], ["updated_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG-13"], ["release_date", Fri, 05 Jan 2001 00:00:00 UTC +00:00], ["title", "Chocolat"], ["updated_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Wed, 25 Apr 2001 00:00:00 UTC +00:00], ["title", "Amelie"], ["updated_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Sat, 06 Apr 1968 00:00:00 UTC +00:00], ["title", "2001: A Space Odyssey"], ["updated_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 05 Nov 2004 00:00:00 UTC +00:00], ["title", "The Incredibles"], ["updated_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 12 Jun 1981 00:00:00 UTC +00:00], ["title", "Raiders of the Lost Ark"], ["updated_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Wed, 21 Jun 2000 00:00:00 UTC +00:00], ["title", "Chicken Run"], ["updated_at", Sat, 02 Apr 2016 05:06:43 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies" for 127.0.0.1 at 2016-04-02 05:06:43 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (4.0ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 55.5ms (Views: 46.0ms | ActiveRecord: 4.0ms)
+Started GET "/movies/2" for 127.0.0.1 at 2016-04-02 05:06:43 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered movies/show.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 10.5ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+Started GET "/movies/2/edit" for 127.0.0.1 at 2016-04-02 05:06:43 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered movies/edit.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 12.6ms (Views: 11.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00], ["description", nil], ["director", "abc"], ["rating", "G"], ["release_date", Wed, 25 Nov 1992 00:00:00 UTC +00:00], ["title", "Aladdin"], ["updated_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Fri, 26 Oct 1984 00:00:00 UTC +00:00], ["title", "The Terminator"], ["updated_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00], ["description", nil], ["director", "ghi"], ["rating", "R"], ["release_date", Fri, 21 Jul 1989 00:00:00 UTC +00:00], ["title", "When Harry Met Sally"], ["updated_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00], ["description", nil], ["director", "jkl"], ["rating", "PG-13"], ["release_date", Wed, 10 Aug 2011 00:00:00 UTC +00:00], ["title", "The Help"], ["updated_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG-13"], ["release_date", Fri, 05 Jan 2001 00:00:00 UTC +00:00], ["title", "Chocolat"], ["updated_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Wed, 25 Apr 2001 00:00:00 UTC +00:00], ["title", "Amelie"], ["updated_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Sat, 06 Apr 1968 00:00:00 UTC +00:00], ["title", "2001: A Space Odyssey"], ["updated_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 05 Nov 2004 00:00:00 UTC +00:00], ["title", "The Incredibles"], ["updated_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 12 Jun 1981 00:00:00 UTC +00:00], ["title", "Raiders of the Lost Ark"], ["updated_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Wed, 21 Jun 2000 00:00:00 UTC +00:00], ["title", "Chicken Run"], ["updated_at", Sat, 02 Apr 2016 05:07:47 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies" for 127.0.0.1 at 2016-04-02 05:07:47 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (19.3ms)
+Completed 200 OK in 56.3ms (Views: 50.6ms | ActiveRecord: 0.3ms)
+Started GET "/movies/2" for 127.0.0.1 at 2016-04-02 05:07:47 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered movies/show.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 8.9ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+Started GET "/movies/2/edit" for 127.0.0.1 at 2016-04-02 05:07:47 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered movies/edit.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 12.5ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+Started PUT "/movies/2" for 127.0.0.1 at 2016-04-02 05:07:47 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>{"title"=>"The Terminator", "rating"=>"R", "release_date(1i)"=>"1984", "release_date(2i)"=>"10", "release_date(3i)"=>"26", "director"=>"David"}, "commit"=>"Update Movie Info", "id"=>"2"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "movies" SET "director" = 'David', "updated_at" = '2016-04-02 05:07:47.768230' WHERE "movies"."id" = 2[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/movies/2
+Completed 302 Found in 5.3ms (ActiveRecord: 0.3ms)
+Started GET "/movies/2" for 127.0.0.1 at 2016-04-02 05:07:47 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered movies/show.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 5.5ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00], ["description", nil], ["director", "abc"], ["rating", "G"], ["release_date", Wed, 25 Nov 1992 00:00:00 UTC +00:00], ["title", "Aladdin"], ["updated_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Fri, 26 Oct 1984 00:00:00 UTC +00:00], ["title", "The Terminator"], ["updated_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00], ["description", nil], ["director", "ghi"], ["rating", "R"], ["release_date", Fri, 21 Jul 1989 00:00:00 UTC +00:00], ["title", "When Harry Met Sally"], ["updated_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00], ["description", nil], ["director", "jkl"], ["rating", "PG-13"], ["release_date", Wed, 10 Aug 2011 00:00:00 UTC +00:00], ["title", "The Help"], ["updated_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG-13"], ["release_date", Fri, 05 Jan 2001 00:00:00 UTC +00:00], ["title", "Chocolat"], ["updated_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Wed, 25 Apr 2001 00:00:00 UTC +00:00], ["title", "Amelie"], ["updated_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Sat, 06 Apr 1968 00:00:00 UTC +00:00], ["title", "2001: A Space Odyssey"], ["updated_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 05 Nov 2004 00:00:00 UTC +00:00], ["title", "The Incredibles"], ["updated_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 12 Jun 1981 00:00:00 UTC +00:00], ["title", "Raiders of the Lost Ark"], ["updated_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Wed, 21 Jun 2000 00:00:00 UTC +00:00], ["title", "Chicken Run"], ["updated_at", Sat, 02 Apr 2016 05:09:15 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies" for 127.0.0.1 at 2016-04-02 05:09:15 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (19.5ms)
+Completed 200 OK in 55.8ms (Views: 49.7ms | ActiveRecord: 0.3ms)
+Started GET "/movies/2" for 127.0.0.1 at 2016-04-02 05:09:16 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered movies/show.html.haml within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 18.4ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:10:08 UTC +00:00], ["description", nil], ["director", "abc"], ["rating", "G"], ["release_date", Wed, 25 Nov 1992 00:00:00 UTC +00:00], ["title", "Aladdin"], ["updated_at", Sat, 02 Apr 2016 05:10:08 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Fri, 26 Oct 1984 00:00:00 UTC +00:00], ["title", "The Terminator"], ["updated_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00], ["description", nil], ["director", "ghi"], ["rating", "R"], ["release_date", Fri, 21 Jul 1989 00:00:00 UTC +00:00], ["title", "When Harry Met Sally"], ["updated_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00], ["description", nil], ["director", "jkl"], ["rating", "PG-13"], ["release_date", Wed, 10 Aug 2011 00:00:00 UTC +00:00], ["title", "The Help"], ["updated_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG-13"], ["release_date", Fri, 05 Jan 2001 00:00:00 UTC +00:00], ["title", "Chocolat"], ["updated_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Wed, 25 Apr 2001 00:00:00 UTC +00:00], ["title", "Amelie"], ["updated_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Sat, 06 Apr 1968 00:00:00 UTC +00:00], ["title", "2001: A Space Odyssey"], ["updated_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 05 Nov 2004 00:00:00 UTC +00:00], ["title", "The Incredibles"], ["updated_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 12 Jun 1981 00:00:00 UTC +00:00], ["title", "Raiders of the Lost Ark"], ["updated_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Wed, 21 Jun 2000 00:00:00 UTC +00:00], ["title", "Chicken Run"], ["updated_at", Sat, 02 Apr 2016 05:10:09 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies" for 127.0.0.1 at 2016-04-02 05:10:09 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 52.9ms (Views: 44.3ms | ActiveRecord: 0.3ms)
+Started GET "/movies/2" for 127.0.0.1 at 2016-04-02 05:10:09 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered movies/show.html.haml within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 19.6ms
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00], ["description", nil], ["director", "abc"], ["rating", "G"], ["release_date", Wed, 25 Nov 1992 00:00:00 UTC +00:00], ["title", "Aladdin"], ["updated_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Fri, 26 Oct 1984 00:00:00 UTC +00:00], ["title", "The Terminator"], ["updated_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00], ["description", nil], ["director", "ghi"], ["rating", "R"], ["release_date", Fri, 21 Jul 1989 00:00:00 UTC +00:00], ["title", "When Harry Met Sally"], ["updated_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00], ["description", nil], ["director", "jkl"], ["rating", "PG-13"], ["release_date", Wed, 10 Aug 2011 00:00:00 UTC +00:00], ["title", "The Help"], ["updated_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG-13"], ["release_date", Fri, 05 Jan 2001 00:00:00 UTC +00:00], ["title", "Chocolat"], ["updated_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00], ["description", nil], ["director", ""], ["rating", "R"], ["release_date", Wed, 25 Apr 2001 00:00:00 UTC +00:00], ["title", "Amelie"], ["updated_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Sat, 06 Apr 1968 00:00:00 UTC +00:00], ["title", "2001: A Space Odyssey"], ["updated_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 05 Nov 2004 00:00:00 UTC +00:00], ["title", "The Incredibles"], ["updated_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00], ["description", nil], ["director", ""], ["rating", "PG"], ["release_date", Fri, 12 Jun 1981 00:00:00 UTC +00:00], ["title", "Raiders of the Lost Ark"], ["updated_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00], ["description", nil], ["director", ""], ["rating", "G"], ["release_date", Wed, 21 Jun 2000 00:00:00 UTC +00:00], ["title", "Chicken Run"], ["updated_at", Sat, 02 Apr 2016 05:10:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies" for 127.0.0.1 at 2016-04-02 05:10:59 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 55.0ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+Started GET "/movies/2" for 127.0.0.1 at 2016-04-02 05:10:59 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered movies/show.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 9.6ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+Started GET "/movies/2/edit" for 127.0.0.1 at 2016-04-02 05:10:59 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered movies/edit.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 15.8ms (Views: 14.2ms | ActiveRecord: 0.1ms)
+Started PUT "/movies/2" for 127.0.0.1 at 2016-04-02 05:10:59 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>{"title"=>"The Terminator", "rating"=>"R", "release_date(1i)"=>"1984", "release_date(2i)"=>"10", "release_date(3i)"=>"26", "director"=>"David"}, "commit"=>"Update Movie Info", "id"=>"2"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "movies" SET "director" = 'David', "updated_at" = '2016-04-02 05:10:59.954522' WHERE "movies"."id" = 2[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/movies/2
+Completed 302 Found in 5.9ms (ActiveRecord: 0.5ms)
+Started GET "/movies/2" for 127.0.0.1 at 2016-04-02 05:10:59 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered movies/show.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 5.0ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
