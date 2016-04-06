@@ -12,8 +12,8 @@ Background: movies have been added to database
   | The Terminator          | R      | 26-Oct-1984  |          |
   | When Harry Met Sally    | R      | 21-Jul-1989  | ghi      |
   | The Help                | PG-13  | 10-Aug-2011  | jkl      |
-  | Chocolat                | PG-13  | 5-Jan-2001   |          |
-  | Amelie                  | R      | 25-Apr-2001  |          |
+  | Chocolat                | PG-13  | 5-Jan-2001   | abc      |
+  | Amelie                  | R      | 25-Apr-2001  | abc      |
   | 2001: A Space Odyssey   | G      | 6-Apr-1968   |          |
   | The Incredibles         | PG     | 5-Nov-2004   |          |
   | Raiders of the Lost Ark | PG     | 12-Jun-1981  |          |
@@ -28,12 +28,17 @@ Background: movies have been added to database
    And I press "Update Movie Info"
    Then I should see "David"
    
+  Scenario: show movies with the same director
+    Given I am on the RottenPotatoes home page
+    When I follow "More about Aladdin"
+    And I follow "Movies with the same director"
+    Then I should see "Chocolat"
+    And I should see "Amelie"
+    And I should not see "The Help"
    
-   
-    # When I check the following ratings: PG, R
-    # And I uncheck the following ratings: PG-13, G
-    # And I press "Refresh"
-    # Then I should see "When Harry Met Sally"
-    # And I should see "Amelie"
-    # But I should not see "2001: A Space Odyssey"
-    # And I should not see "The Help"
+  Scenario: no director exists  
+    Given I am on the RottenPotatoes home page
+    When I follow "More about The Incredibles"
+    And I follow "Movies with the same director"
+    Then I should be on the RottenPotatoes home page
+    And I should see "The Incredibles does not have a director."
