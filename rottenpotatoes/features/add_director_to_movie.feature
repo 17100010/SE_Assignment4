@@ -1,44 +1,34 @@
-Feature: Edit a movie to add a director
- 
-  As a movie lover
-  So that I can also keep track of which movie was directed by which director
-  I want to be able to add directors to existing movies
+Feature: search for movies by director
 
-Background: movies have been added to database
+  As a movie buff
+  So that I can find movies with my favorite director
+  I want to include and serach on director information in movies I enter
+
+Background: movies in database
 
   Given the following movies exist:
-  | title                   | rating | release_date | director |
-  | Aladdin                 | G      | 25-Nov-1992  | Max      |
-  | The Terminator          | R      | 26-Oct-1984  |          |
-  | When Harry Met Sally    | R      | 21-Jul-1989  | Carl     |
-  | The Help                | PG-13  | 10-Aug-2011  | Zoey     |
-  | Chocolat                | PG-13  | 5-Jan-2001   | Max      |
-  | Amelie                  | R      | 25-Apr-2001  | Max      |
-  | 2001: A Space Odyssey   | G      | 6-Apr-1968   |          |
-  | The Incredibles         | PG     | 5-Nov-2004   |          |
-  | Raiders of the Lost Ark | PG     | 12-Jun-1981  |          |
-  | Chicken Run             | G      | 21-Jun-2000  |          |
+  | title        | rating | director     | release_date |
+  | Star Wars    | PG     | George Lucas |   1977-05-25 |
+  | Blade Runner | PG     | Ridley Scott |   1982-06-25 |
+  | Alien        | R      |              |   1979-05-25 |
+  | THX-1138     | R      | George Lucas |   1971-03-11 |
 
-  And  I am on the RottenPotatoes home page
-  
-  Scenario: Edit a movie to add a director
-   When I follow "More about The Terminator"
-   And I follow "Edit"
-   And I fill in "Director" with "Henry"
-   And I press "Update Movie Info"
-   Then I should see "Henry"
-   
-  Scenario: show movies with the same director
-    Given I am on the RottenPotatoes home page
-    When I follow "More about Aladdin"
-    And I follow "Movies with the same director"
-    Then I should see "Chocolat"
-    And I should see "Amelie"
-    And I should not see "The Help"
-   
-  Scenario: no director exists  
-    Given I am on the RottenPotatoes home page
-    When I follow "More about The Incredibles"
-    And I follow "Movies with the same director"
-    Then I should be on the RottenPotatoes home page
-    And I should see "The Incredibles does not have a director."
+Scenario: add director to existing movie
+  When I go to the edit page for "Alien"
+  And  I fill in "Director" with "Ridley Scott"
+  And  I press "Update Movie Info"
+  Then the director of "Alien" should be "Ridley Scott"
+
+Scenario: find movie with same director
+  Given I am on the details page for "Star Wars"
+  When  I follow "Find Movies With Same Director"
+  Then  I should be on the Similar Movies page for "Star Wars"
+  And   I should see "THX-1138"
+  But   I should not see "Blade Runner"
+
+Scenario: can't find similar movies if we don't know director (sad path)
+  Given I am on the details page for "Alien"
+  Then  I should not see "Ridley Scott"
+  When  I follow "Find Movies With Same Director"
+  Then  I should be on the home page
+  And   I should see "'Alien' has no director info"

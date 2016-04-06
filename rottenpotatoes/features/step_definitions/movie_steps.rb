@@ -6,3 +6,11 @@ Given /the following movies exist/ do |movies_table|
   end
   # flunk "Unimplemented"
 end
+
+
+
+Then /the director of "(.*)" should be "(.*)"/ do |m, d|
+   x = page.body.to_s.include?(m)
+   y = page.body.to_s.include?(d)
+   assert(x==y, "Error")
+ end
