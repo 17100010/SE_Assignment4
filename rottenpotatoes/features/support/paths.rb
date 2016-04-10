@@ -12,26 +12,21 @@ module NavigationHelpers
   #
   def path_to(page_name)
     
-    
-    if page_name =~ /^the (.*) for "(.*)"$/
-      # puts "HERE"
-      movie_name = $2.to_s
-      page_name  = $1.to_s
-      # puts page_name
-      # puts movie_name
-    end
-    
+   
     case page_name
     
     
     when /^the (RottenPotatoes )?home\s?page$/ then'/movies'
-    when /^edit page$/ then
+    when /^the edit page for "(.*)"$/ then
+      movie_name = $1.to_s
       m = Movie.find_by_title(movie_name)
       edit_movie_path(m)
-    when /^details page$/ then
+    when /^the details page for "(.*)"$/ then
+      movie_name = $1.to_s
       m = Movie.find_by_title(movie_name)
       movie_path(m)
-    when /^Similar Movies page$/ then
+    when /^the Similar Movies page for "(.*)"$/ then
+      movie_name = $1.to_s
       m = Movie.find_by_title(movie_name)
       sameDirector_movie_path(m)
       
